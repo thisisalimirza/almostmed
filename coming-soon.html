@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - AlmostMed</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="/" class="logo">
+                <i class="fas fa-heartbeat logo-icon"></i>
+                AlmostMed
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="/#features">Features</a>
+                <a href="/#how-it-works">How It Works</a>
+                <a href="/#testimonials">Success Stories</a>
+                <a href="/#pricing">Pricing</a>
+                <a href="https://tally.so/r/wQ85y7" class="nav-cta-button">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="coming-soon">
+        <div class="coming-soon-content">
+            <i class="fas fa-tools coming-soon-icon"></i>
+            <h1>Coming Soon</h1>
+            <p>We're working hard to bring you something amazing. This page is currently under construction.</p>
+            <div class="coming-soon-actions">
+                <a href="/" class="cta-button">Back to Home</a>
+                <a href="https://tally.so/r/wQ85y7" class="secondary-button">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AlmostMed</h3>
+                <p>Connecting ambitious pre-med students with successful medical students for personalized mentorship and guidance.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/#features">Features</a></li>
+                    <li><a href="/#how-it-works">How It Works</a></li>
+                    <li><a href="/#testimonials">Success Stories</a></li>
+                    <li><a href="/#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="/coming-soon.html">Blog</a></li>
+                    <li><a href="/coming-soon.html">MCAT Guides</a></li>
+                    <li><a href="/coming-soon.html">Application Tips</a></li>
+                    <li><a href="/#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="mailto:support@almostmed.com">support@almostmed.com</a></li>
+                    <li><a href="tel:+1234567890">(123) 456-7890</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                © 2024 AlmostMed. All rights reserved.
+                <a href="/privacy-policy.html">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        function toggleMobileMenu() {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.querySelector('i').classList.toggle('fa-bars');
+            mobileMenuBtn.querySelector('i').classList.toggle('fa-times');
+        }
+
+        mobileMenuBtn?.addEventListener('click', toggleMobileMenu);
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navLinks.classList.contains('active') && 
+                !navLinks.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target)) {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+            }
+        });
+    </script>
+</body>
+</html> 

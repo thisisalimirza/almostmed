@@ -1797,4 +1797,210 @@ body::-webkit-scrollbar-thumb {
         overflow: hidden;
         width: 100%;
     }
+}
+
+/* Privacy Policy Page */
+.privacy-policy {
+    padding: 10rem 5% 4rem;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #ffffff 100%);
+    min-height: 100vh;
+}
+
+.privacy-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(45, 91, 255, 0.1);
+}
+
+.privacy-policy h1 {
+    font-size: 2.8rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.last-updated {
+    text-align: center;
+    color: var(--text-color);
+    opacity: 0.7;
+    margin-bottom: 3rem;
+}
+
+.policy-section {
+    margin-bottom: 3rem;
+}
+
+.policy-section:last-child {
+    margin-bottom: 0;
+}
+
+.policy-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.policy-section h3 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin: 2rem 0 1rem;
+}
+
+.policy-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.policy-section ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.policy-section li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .privacy-policy {
+        padding: 8rem 1rem 3rem;
+    }
+
+    .privacy-content {
+        padding: 2rem;
+        border-radius: 15px;
+    }
+
+    .privacy-policy h1 {
+        font-size: 2.2rem;
+    }
+
+    .policy-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .policy-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .policy-section p,
+    .policy-section li {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .privacy-content {
+        padding: 1.5rem;
+    }
+
+    .privacy-policy h1 {
+        font-size: 2rem;
+    }
+
+    .policy-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .policy-section h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Coming Soon Page */
+.coming-soon {
+    padding: 10rem 5% 4rem;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #ffffff 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.coming-soon-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(45, 91, 255, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+.coming-soon-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.coming-soon h1 {
+    font-size: 2.8rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.coming-soon p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.coming-soon-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .coming-soon {
+        padding: 8rem 1rem 3rem;
+    }
+
+    .coming-soon-content {
+        padding: 2rem;
+    }
+
+    .coming-soon h1 {
+        font-size: 2.2rem;
+    }
+
+    .coming-soon p {
+        font-size: 1.1rem;
+    }
+
+    .coming-soon-actions {
+        flex-direction: column;
+    }
+
+    .coming-soon-actions .cta-button,
+    .coming-soon-actions .secondary-button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .coming-soon-content {
+        padding: 1.5rem;
+    }
+
+    .coming-soon h1 {
+        font-size: 2rem;
+    }
+
+    .coming-soon p {
+        font-size: 1rem;
+    }
 } 
